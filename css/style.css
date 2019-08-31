@@ -53,6 +53,7 @@ body {
     #picture-box {
         float:none;
         width:100%;
+        background-position: left;
         
     }
 
