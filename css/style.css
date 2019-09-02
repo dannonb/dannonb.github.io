@@ -47,6 +47,7 @@ body {
 #main-footer {
     text-align: center;
     margin-top:50px;
+    border-top: solid 5px
 }
 
 @media(max-width: 800px) {
