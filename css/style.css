@@ -4,7 +4,7 @@ body {
     font-family:'Sigmar One', cursive;
     line-height: 2.5em;
     margin: 0;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .clr {
@@ -21,7 +21,7 @@ body {
 
 #main-header {
     text-align: center;
-    border-bottom: solid 5px 
+    border-bottom: solid 5px;
 
 }
 
@@ -47,7 +47,7 @@ body {
 #main-footer {
     text-align: center;
     margin-top:50px;
-    border-top: solid 5px
+    border-top: solid 5px;
 }
 
 @media(max-width: 800px) {
