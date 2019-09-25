@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Social Media Site</title>
+</head>
+<body>
+    <div><h1 style="background: #eee; color: blue">SOCIAL MEDIA SITE</h1></div>
+
+    <h3>Search for Users</h3>
+    <label>
+        <input type="text" id="search-field"> Search Here
+    </label>
+    <br>
+    <br>
+    
+    <div id="greeting"></div>
+    
+    <form id="add-user">
+        <h3>Add User</h3>
+        <label>
+            <input type="text" name="addUser"> Name
+        </label>
+        <br>
+        <label>
+            <input type="text" name="addAge"> Age
+        </label>
+        <br>
+        <button>Add User</button>
+    </form>
+    <h3>Users</h3>
+    <div id="display-users"></div>
+    <script src="uuidv4.js"></script>
+    <script src="greeter-functions.js"></script>
+    <script src="greeter.js"></script>
+</body>
+</html>
