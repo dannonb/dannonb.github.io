@@ -137,7 +137,7 @@ const nameChanger = function (name) {
 
 const errorMsg = function () {
     const err = document.createElement("h2")
-    err.textContent = "ERROR: PLEASE FILL IN ALL FIELDS TO ADD USER"
+    err.textContent = "ERROR: ALL FIELDS BELOW ARE REQUIRED TO ADD USER"
     err.setAttribute("style", "color: orangered")
     document.querySelector("#greeting").appendChild(err)
 
