@@ -22,7 +22,7 @@ const greeting = function (userName) {
     if (obj.assignedNum >7) {
          greetEl.textContent = `Welcome back ${obj.playerName.charAt(0).toUpperCase() + obj.playerName.slice(1, obj.playerName.length)}, how the heck are ya?`
     } else if (obj.assignedNum > 3 ) {
-         greetEl.textContent = `No WAY it's ${obj.playerName.charAt(0).toUpperCase() + obj.playerName.slice(1, obj.playerName.length)}! You know how I can remember your name so easily? It as ${obj.length} letters, so how could I forget?`
+         greetEl.textContent = `No WAY it's ${obj.playerName.charAt(0).toUpperCase() + obj.playerName.slice(1, obj.playerName.length)}! You know how I can remember your name so easily? It has ${obj.length} letters, so how could I forget?`
     } else {
          greetEl.textContent = `${obj.nickName.charAt(0).toUpperCase() + obj.nickName.slice(1, obj.nickName.length)}, you're the coolest! Thanks for registering!`
     }
@@ -54,17 +54,33 @@ const getUsers = function () {
 const addUser = function (e) {
 let userName = e.target.elements.addUser.value
 let userAge = e.target.elements.addAge.value
-users.push({
-    id: uuidv4(),
-    name: userName,
-    age: userAge,
-})
-e.target.elements.addUser.value = ""
-e.target.elements.addAge.value = ""
-saveUser(users)
-greeting(userName)
-displayUsers(users, filters)
+if (userName.length > 0 && userAge.length > 0) {
+    users.push({
+        id: uuidv4(),
+        name: userName,
+        age: userAge,
+    })
+    e.target.elements.addUser.value = ""
+    e.target.elements.addAge.value = ""
+    saveUser(users)
+    greeting(userName)
+    displayUsers(users, filters)
+    } else {
+        errorMsg()
+    }
 }
+
+// users.push({
+//     id: uuidv4(),
+//     name: userName,
+//     age: userAge,
+// })
+// e.target.elements.addUser.value = ""
+// e.target.elements.addAge.value = ""
+// saveUser(users)
+// greeting(userName)
+// displayUsers(users, filters)
+// }
 
 
 // this function creates a random number
@@ -116,5 +132,13 @@ const nameChanger = function (name) {
             nickName: name.slice(0, Math.ceil(name.length / 2)) + "dawg"
             }
     }
+
+}
+
+const errorMsg = function () {
+    const err = document.createElement("h2")
+    err.textContent = "ERROR: PLEASE FILL IN ALL FIELDS TO ADD USER"
+    err.setAttribute("style", "color: orangered")
+    document.querySelector("#greeting").appendChild(err)
 
 }
