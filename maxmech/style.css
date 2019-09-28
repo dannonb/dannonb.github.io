@@ -18,14 +18,15 @@ body{
 
 .container{
     height: 200px;
-    width: 100%;
+    width: 75%;
     margin: auto;
     background-image: url("images/mmbg.jpg");
     background-repeat: no-repeat;
     color: white;
     background-size: cover;
-    
+    border: 5px solid black;
     text-align: center;
+    margin-top: 20px;
     }
 
 
@@ -110,7 +111,7 @@ img {vertical-align: middle;
   position: relative;
   margin: auto;
   margin-top: 20px;
-  border: 15px solid;
+  border: 5px solid;
   overflow: hidden;
   
   
