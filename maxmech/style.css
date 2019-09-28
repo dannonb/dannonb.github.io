@@ -57,8 +57,14 @@ body{
 }
 
 #nav a:hover {
-  color: #F4D03f
+  color: #F4D03f;
 }
+
+#nav a:active {
+  color: #F4D03f;
+}
+
+
 
 #header img {
     
