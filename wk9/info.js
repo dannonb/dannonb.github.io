@@ -6,7 +6,7 @@ let user = users.find(function (u) {
     return u.id === userId
 })
 document.querySelector("button").addEventListener('click', function () {
-    location.assign("/index.html")
+    location.assign("wk9/index.html")
 })
 
 const details =  (user) => {
