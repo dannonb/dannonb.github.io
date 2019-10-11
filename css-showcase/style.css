@@ -1,0 +1,194 @@
+/* using * calls evreything. this is called a reset*/
+/*
+* {
+    margin:0;
+    padding:0;
+
+}
+*/
+body {
+    background-color:#f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+/* below is an easier way to accomplish what was done above */
+    font: normal 18px Arial, Helvetica, sans-serif;
+/* em is a measurement usually used in responsive design  */
+    line-height:1.6em;
+    margin:3;
+}
+/* margin is basically spacing around an element */
+/* use percentages when possible for responsiveness */
+.container {
+    width:80%;
+    margin: auto;
+}
+
+.clr {
+    clear:both;
+}
+
+.box-1 {
+    background-color:#333;
+    color:#fff;
+
+/*border sides can be done indiviadually or in one border property*/
+ 
+    
+    border-bottom-width: 5px;
+    border-top-style: dotted;
+    border:5px red solid;
+
+    padding:20px;
+    margin-top:20px 0;
+}
+
+.box-1 h1 {
+    padding: 5px;
+    font-family:Tahoma;
+    font-weight:800;
+    text-decoration:underline;
+    font-style:italic;
+    text-transform:uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.categories {
+    border:1px #ccc solid;
+    padding: 10px;
+    border-radius:15px;
+    
+}
+
+.categories h2 {
+    text-align:center;
+}
+
+.categories ul {
+    padding:0;
+    list-style:none;
+
+}
+
+.categories li {
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url("check.png");
+}
+
+a {
+    text-decoration:none;
+    color:black;
+
+}
+
+/*for hoverig over link */
+
+a:hover {
+    color:red;
+}
+
+/*for when a link is active*/
+a:active {
+    color:green;
+}
+
+/*when a link has already been visited*/
+ a:visited {
+    color:white;
+ }
+
+ .my-form {
+     padding:20px;
+
+ }
+
+ .my-form .form-group {
+    padding-bottom: 15px;
+ }
+
+ .my-form label {
+    display:block;
+ }
+
+ .my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+ }
+
+ .button {
+     background-color:#333;
+     color:#fff;
+     border:none;
+ }
+
+ .button:hover {
+     background:red;
+ }
+
+ .block {
+     float: left;
+     width: 33.3%;
+     border: solid 1px #ccc;
+     padding: 10px;
+     box-sizing: border-box;
+ }
+
+ #sidebar {
+     float: right;
+     width: 30%; 
+ }
+
+ #main-post {
+     float: left;
+     width: 70%;
+ }
+
+ .p-box {
+     width:800px;
+     height:500px;
+     border: 1px solid #000;
+     position: relative;
+     background-image: url(samplebg.jpg);
+     background-repeat: no-repeat;
+     background-position:center center;
+     
+ }
+
+ .p-box h1 {
+     position:absolute;
+     top: 40px
+ }
+
+ .fixed {
+     position:fixed;
+     top: 400px;
+ }
+
+
+/* sudo element*/
+
+ .my-list li:first-child{
+     background: red;
+ }
+
+ .my-list li:last-child{
+     background:blue;
+ }
+
+ .my-list li:nth-child(5){
+     background:yellow;
+ }
+
+ .my-list li:nth-child(even){
+    background: grey;
+}
