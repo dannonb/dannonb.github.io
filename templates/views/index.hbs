@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dannon Bigham</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <style>
+        body{
+            padding-top: 310px;
+        }
+    </style>
+</head>
+<body>
+    {{>header}}
+    
+    <div class="main-content">
+        <section id="about">
+            <h3>About Me:</h3>
+            <div id="button">
+                <button  onclick="aboutFuncs()">Click to find out more</button>
+            </div>
+            <div id="chat-bubble">
+                
+                <p id="para"></p>
+            </div>
+            <div id="about-container">
+                <div id="about-p">
+                    <h4>Location:</h4>
+                    <p>Fresno, Ca</p>
+                </div>
+                <div id="about-p">
+                    <h4>Personal Info:</h4>     
+                    <p>Name: Dannon Bigham</p>
+                    <p>Age: 26</p>
+                    
+
+                </div>
+                <div id="about-p">
+                    <h4>Experience:</h4>
+                    <p>1 year</p>
+                </div>
+            </div>
+
+            
+        </section>
+
+        
+
+        <section id="contact">
+            <h3>Contact Info:</h3>
+            <p>Phone: <a href="tel:5593653726">559-365-3726</a></p>
+            <p>Email: dannonbigham@gmail.com</p>
+            <form action="mailto:dannonbigham@gmail.com">
+                <input id="submit-email" type="submit" value="Email Me!">
+            </form>
+        </section>
+
+        
+
+        <section id="socials">
+            <h3>Social Media:</h3>
+            <div id="socials-images">
+                <div id="facebook"><img src="images/facebook-icon.png" alt="facebook logo"></div>
+                <div id="twitter"><img src="images/twitter-icon.png" alt="twitter logo"></div>
+                <div id="youtube"><img src="images/youtube-icon.png" alt="youtube logo"></div>
+                <div id="linked"><img src="images/linked-icon.png" alt="linkedin logo"></div>
+                
+            </div>
+        </section>
+    </div>
+    {{>footer}}
+    <script src="app.js"></script>
+</body>
+</html>
