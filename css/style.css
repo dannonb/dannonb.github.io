@@ -237,9 +237,11 @@ Header section
 }
 
 .main-menu {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	padding-left: 44px;
-	
+	position: relative;
 	z-index: 99;
 	background: #353535;
 }
