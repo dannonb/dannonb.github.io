@@ -235,12 +235,9 @@ Header section
 	padding: 21px 55px 20px;
 	background: #222222;
 }
-#nav {
-	display: flex;
-	flex-direction: row;
-}
+
 .main-menu {
-	display: inline-block;
+	display: inline-flex;
 	align-items: center;
 	padding-left: 44px;
 	position: relative;
