@@ -238,7 +238,7 @@ Header section
 
 .main-menu {
 	display: inline-block;
-	text-align: center;
+	align-items: center;
 	padding-left: 44px;
 	position: relative;
 	z-index: 99;
