@@ -237,6 +237,8 @@ Header section
 }
 
 .main-menu {
+	display: flex;
+	flex-direction: row;
 	padding-left: 44px;
 	position: relative;
 	z-index: 99;
