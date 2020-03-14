@@ -237,11 +237,8 @@ Header section
 }
 
 .main-menu {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
 	padding-left: 44px;
-	
+	position: relative;
 	z-index: 99;
 	background: #353535;
 }
